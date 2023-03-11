@@ -1,0 +1,6 @@
+- name: install packages
+  package:
+    name:
+      - elixir
+      - erlang
+      - postgresql-server

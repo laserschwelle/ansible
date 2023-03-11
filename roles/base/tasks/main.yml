@@ -8,3 +8,4 @@
 - include_tasks: emacs.yml
 - include_tasks: flatpak.yml
 - include_tasks: pass.yml
+- include_tasks: elixir.yml
