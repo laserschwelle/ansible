@@ -36,12 +36,12 @@
     - org-capture
     - org-tangle
 
-- name: Install Doom Emacs
-  become_user: philipp
-  expect:
-    command: bash -c '~/.config/emacs/bin/doom install'
-    responses:
-      "Download and install all-the-icon's fonts? (y or n) ": "n"
+#- name: Install Doom Emacs
+#  become_user: philipp
+#  expect:
+#    command: bash -c '~/.config/emacs/bin/doom install'
+#    responses:
+#      "Download and install all-the-icon's fonts? (y or n) ": "n"
 
 - name: load custom doom config
   become_user: philipp
