@@ -23,3 +23,14 @@
     state: directory
     owner: philipp
     group: philipp
+
+- name: symlink doom bin
+  become_user: philipp
+  file:
+    src: '~/.config/emacs/bin/{{ item }}'
+    dest: '~/.local/bin/.'
+  loop:
+    - doom
+    - doomscript
+    - org-capture
+    - org-tangle
