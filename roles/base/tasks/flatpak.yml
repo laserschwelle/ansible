@@ -9,7 +9,7 @@
 - name: install flatpaks
   become_user: philipp
   flatpak:
-    name: {{ item }}
+    name: "{{ item }}"
     method: user
     state: present
   loop:
