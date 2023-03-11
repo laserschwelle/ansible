@@ -9,3 +9,17 @@
     repo: 'https://github.com/doomemacs/doomemacs'
     dest: '~/.config/emacs'
     depth: 1
+    
+- name: make sure .emacs.d is deleted
+  become_user: philipp
+  file:
+    path: '~/.emacs.d'
+    state: absent
+    
+- name: create .local/bin/doom
+  become_user: philipp
+  file:
+    path: '~/.local/bin/'
+    state: directory
+    owner: philipp
+    group: philipp
