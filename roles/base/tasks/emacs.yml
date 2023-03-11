@@ -56,5 +56,4 @@
     
 - name: sync doom emacs
   become_user: philipp
-  script: -c 'doom sync'
-    executable: /usr/bin/bash 
+  shell: doom sync
