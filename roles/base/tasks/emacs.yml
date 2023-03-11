@@ -39,4 +39,5 @@
 - name: install doom
   become_user: philipp
   script:
-    cmd: doom install
+    executable: '~/.config/emacs/bin/doom'
+    args: install
