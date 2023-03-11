@@ -1,7 +1,6 @@
-  tasks:
-  - name: install packages
-    package:
-      name: 
-        - htop
-        - vim
-        - emacs
+- name: install packages
+  package:
+    name: 
+      - htop
+      - vim
+      - emacs
