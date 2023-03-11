@@ -28,7 +28,7 @@
   become_user: philipp
   file:
     src: '~/.config/emacs/bin/{{ item }}'
-    dest: '~/.local/bin/'
+    dest: '~/.local/bin/{{ item }}'
     state: link
   loop:
     - doom
