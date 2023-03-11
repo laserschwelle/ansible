@@ -56,4 +56,4 @@
     
 - name: sync doom emacs
   become_user: philipp
-  shell: doom sync
+  shell: '~/.config/emacs/bin/doom sync'
