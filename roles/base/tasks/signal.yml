@@ -1,5 +1,6 @@
 - name: add flathub flatpak repository
   flatpak_remote:
+  become_user: philipp
     name: flathub
     state: present
     flatpakrepo_url: https://dl.flathub.org/repo/flathub.flatpakrepo
