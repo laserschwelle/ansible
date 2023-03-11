@@ -54,6 +54,6 @@
     - init.el
     - config.el
     
-- name: sync doom emacs
-  become_user: philipp
-  shell: '~/.config/emacs/bin/doom sync'
+#- name: sync doom emacs
+#  become_user: philipp
+#  shell: '~/.config/emacs/bin/doom sync'
