@@ -1,3 +1,27 @@
+- name: install gnome packages
+  package:
+    name:
+      - htop
+      - vim
+      - ffmpeg-free
+      - thunderbird
+      - unar
+      - gedit
+      - gnome-backgrounds
+      - gnome-books
+      - gnome-boxes
+      - gnome-control-center
+      - gnome-disk-utility
+      - gnome-icon-theme
+      - gnome-remote-desktop
+      - gnome-shell
+      - gnome-shell-extensions
+      - gnome-system-monitor
+      - gnome-terminal
+      - gnome-todo
+      - gnome-tweaks
+      - nautilus
+
 - name: disable hot corners
   become_user: philipp
   dconf:
