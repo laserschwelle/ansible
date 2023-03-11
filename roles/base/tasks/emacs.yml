@@ -44,10 +44,9 @@
 #      "Download and install all-the-icon's fonts? (y or n) ": "n"
 
 - name: load custom doom config
-  become_user: philipp
   copy:
     src: 'doom/init.el'
-    dest: '~/.config/doom/init.el'
+    dest: '/home/philipp/.config/doom/init.el'
     owner: philipp
     group: philipp
     mode: 0600
