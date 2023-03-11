@@ -45,12 +45,11 @@
 
 - name: load custom doom config
   copy:
-    src: '/files/doom/{{ item }}'
+    src: 'doom/{{ item }}'
     dest: '/home/philipp/.config/doom/{{ item }}'
     owner: philipp
     group: philipp
     mode: 0600
-    remote_src: true
   loop:
     - init.el
     - config.el
