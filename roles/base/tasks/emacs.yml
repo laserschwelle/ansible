@@ -45,7 +45,7 @@
 
 - name: load custom doom config
   become_user: philipp
-  file:
+  copy:
     src: 'doom/init.el'
     dest: '~/.config/doom/init.el'
     owner: philipp
