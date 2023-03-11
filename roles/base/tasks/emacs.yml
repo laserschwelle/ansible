@@ -1,0 +1,11 @@
+- name: install emacs
+  package:
+    name:
+      - emacs
+      
+- name: download doom
+  become_user: philipp
+  git:
+    repo: 'https://github.com/doomemacs/doomemacs'
+    dest: '~/.config/emacs'
+    depth: 1
