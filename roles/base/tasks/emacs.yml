@@ -36,7 +36,7 @@
     - org-capture
     - org-tangle
 
-#- name: Install Doom Emacs
+#- name: install doom emacs
 #  become_user: philipp
 #  expect:
 #    command: bash -c '~/.config/emacs/bin/doom install'
@@ -53,3 +53,8 @@
   loop:
     - init.el
     - config.el
+    
+- name: sync doom emacs
+  become_user: philipp
+  script:
+    cmd: bash -c 'doom sync'
