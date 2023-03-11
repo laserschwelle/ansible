@@ -1,0 +1,19 @@
+- name: add flathub flatpak repository
+  become_user: philipp
+  flatpak_remote:
+    name: flathub
+    state: present
+    flatpakrepo_url: https://flathub.org/repo/flathub.flatpakrepo
+    method: user
+
+- name: install flatpaks
+  become_user: philipp
+  flatpak:
+    name: {{ item }}
+    method: user
+    state: present
+  loop:
+    - org.signal.Signal
+    - org.telegram.desktop
+    - org.gnome.Sudoku
+    - io.dbeaver.DBeaverCommunity
