@@ -4,7 +4,7 @@
       - htop
       - vim
       - ffmpeg-free
-      - pass
 
 - include_tasks: emacs.yml
 - include_tasks: signal.yml
+- include_tasks: pass.yml
