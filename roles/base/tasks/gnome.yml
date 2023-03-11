@@ -8,14 +8,13 @@
       - unar
       - gedit
       - gnome-backgrounds
-      - gnome-books
       - gnome-boxes
       - gnome-control-center
       - gnome-disk-utility
       - gnome-icon-theme
       - gnome-remote-desktop
       - gnome-shell
-      - gnome-shell-extensions
+      - gnome-extensions-app
       - gnome-system-monitor
       - gnome-terminal
       - gnome-todo
