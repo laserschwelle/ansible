@@ -45,7 +45,7 @@
 
 - name: load custom doom config
   copy:
-    src: 'doom/init.el'
+    src: 'files/doom/init.el'
     dest: '/home/philipp/.config/doom/init.el'
     owner: philipp
     group: philipp
