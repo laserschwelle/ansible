@@ -45,8 +45,9 @@
 
 - name: load custom doom config
   copy:
-    src: 'files/doom/init.el'
+    src: 'doom/init.el'
     dest: '/home/philipp/.config/doom/init.el'
     owner: philipp
     group: philipp
     mode: 0600
+    remote_src: true
