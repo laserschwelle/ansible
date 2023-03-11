@@ -4,6 +4,7 @@
       - htop
       - vim
       - ffmpeg-free
+      - thunderbird
 
 - include_tasks: emacs.yml
 - include_tasks: flatpak.yml
