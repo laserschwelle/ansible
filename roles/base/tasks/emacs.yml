@@ -50,6 +50,7 @@
     owner: philipp
     group: philipp
     mode: 0600
+    remote_src: true
   loop:
     - init.el
     - config.el
