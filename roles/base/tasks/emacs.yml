@@ -46,5 +46,8 @@
 - name: load custom doom config
   become_user: philipp
   file:
-    src: 'files/doom/init.el'
+    src: 'doom/init.el'
     dest: '~/.config/doom/init.el'
+    owner: philipp
+    group: philipp
+    mode: 0600
