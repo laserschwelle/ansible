@@ -7,3 +7,4 @@
       - pass
 
 - include_tasks: emacs.yml
+- include_tasks: signal.yml
