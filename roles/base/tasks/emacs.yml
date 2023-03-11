@@ -41,8 +41,9 @@
   expect:
     command: bash -c "~/.config/emacs/bin/doom install"
     responses:
+      Question:
 #      'Generate an envvar file? \(see `doom help env` for details\) (y or n)': 'y'
-      "Download and install all-the-icon's fonts? (y or n)": 'n'
+        - 'n'
 
 - name: load custom doom config
   become_user: philipp
