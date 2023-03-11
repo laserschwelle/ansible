@@ -1,13 +1,12 @@
----
-- hosts: localhost
-  connection: local
+# run roles
+- hosts: all
+  tags: base
   become: true
-  
-  tasks:
-  - name: install packages
-    package:
-      name: 
-        - htop
-        - vim
-        - emacs
-        - ffmpeg
+  roles:
+    - base
+
+#- hosts: workstation
+#  tags: workstation
+#  become: true
+#  roles:
+#    - workstation
