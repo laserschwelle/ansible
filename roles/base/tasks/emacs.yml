@@ -45,7 +45,7 @@
 
 - name: load custom doom config
   copy:
-    src: 'doom/{{ item }}'
+    src: '/files/doom/{{ item }}'
     dest: '/home/philipp/.config/doom/{{ item }}'
     owner: philipp
     group: philipp
