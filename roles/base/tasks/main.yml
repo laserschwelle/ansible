@@ -3,4 +3,5 @@
     name: 
       - htop
       - vim
-      - emacs
+
+- include_tasks: emacs.yml
