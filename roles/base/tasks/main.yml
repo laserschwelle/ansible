@@ -5,6 +5,7 @@
       - vim
       - ffmpeg-free
       - thunderbird
+      - unar
 
 - include_tasks: emacs.yml
 - include_tasks: flatpak.yml
