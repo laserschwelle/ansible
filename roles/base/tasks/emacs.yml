@@ -35,7 +35,17 @@
     - doomscript
     - org-capture
     - org-tangle
-    
-- name: install doom
+
+- name: Install Doom Emacs
   become_user: philipp
-  script: '~/.config/emacs/bin/doom install'
+  expect:
+    command: bash -c "~/.config/emacs/bin/doom install"
+    responses:
+      'Generate an envvar file? \(see `doom help env` for details\) (y or n)': 'y'
+      "Download and install all-the-icon's fonts? (y or n)": 'y'
+
+- name: load custom doom config
+  become_user: philipp
+  file:
+    src: 
+    dest: '~/.config/doom/init.el'
