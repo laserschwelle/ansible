@@ -1,0 +1,29 @@
+- name: disable hot corners
+  become_user: philipp
+  dconf:
+    key: "/org/gnome/shell/interface/enable-hot-corners"
+    value: "false"
+
+- name: disable event-sounds
+  become_user: philipp
+  dconf:
+    key: "/org/gnome/desktop/sound/event-sounds"
+    value: "false"
+
+- name: disable input sounds
+  become_user: philipp
+  dconf:
+    key: "/org/gnome/desktop/sound/input-feedback-sounds"
+    value: "false"
+
+- name: disable lock screen notifications
+  become_user: philipp
+  dconf:
+    key: "/org/gnome/desktop/notifications/show-in-lock-screen"
+    value: "false"
+
+- name: workspaces on all
+  become_user: philipp
+  dconf:
+    key: "/org/gnome/shell/overrides/workspaces-only-on-primary"
+    value: "false"

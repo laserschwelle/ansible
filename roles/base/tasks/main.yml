@@ -11,3 +11,5 @@
 - include_tasks: flatpak.yml
 - include_tasks: pass.yml
 - include_tasks: elixir.yml
+- include_tasks: python.yml
+- include_tasks: gnome.yml
