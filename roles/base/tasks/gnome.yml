@@ -1,11 +1,6 @@
 - name: install gnome packages
   package:
     name:
-      - htop
-      - vim
-      - ffmpeg-free
-      - thunderbird
-      - unar
       - gedit
       - gnome-backgrounds
       - gnome-boxes
