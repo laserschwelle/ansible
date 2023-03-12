@@ -13,8 +13,5 @@
     method: user
     state: present
   loop:
-    - org.signal.Signal
-    - org.telegram.desktop
-    - org.gnome.Sudoku
-    - io.dbeaver.DBeaverCommunity
-    - com.spotify.Client
+    - com.valvesoftware.Steam
+    - com.valvesoftware.Steam.CompatibilityTool.Proton
